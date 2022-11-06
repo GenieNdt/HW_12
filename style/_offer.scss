@@ -1,0 +1,94 @@
+@use 'base' as *;
+@use 'styles' as *;
+
+.offer-section {
+
+    &__h3 {
+        font-weight: 700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: $title;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        min-height: 250px;
+        margin-bottom: 50px;
+    }
+
+    &__item-first {
+        position: relative;
+        background-image: url(../assets/images/background_4.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 28px 0 0 25px;
+    }
+
+    &__item-second {
+        position: relative;
+        background-image: url(../assets/images/background_5.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 28px 0 0 25px;
+    }
+
+    &__h4 {
+        font-weight: 600;
+        font-size: 22px;
+        color: $title;
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 150%;
+        color: $text;
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+
+    &__prices {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 30px;
+
+        &__price {
+            display: flex;
+            gap: 10px;
+        }
+
+        &__button {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            text-decoration: none;
+            color: $basic-white;
+            background-color: $main-green;
+            border-radius: 2px;
+            padding: 7px 10px;
+        }
+    }
+
+    &__circles {
+        display: flex;
+        gap: 18px;
+        
+        &__item {
+            font-family: 'Rubik';
+            font-weight: 400;
+            font-size: 6px;
+            line-height: 120%;
+            color: $basic-white;
+            background-color: $main-green;
+            max-width: 19px;
+            padding: 7px 10px;
+            border-radius: 50%;
+            text-align: center;
+        }
+    }
+}

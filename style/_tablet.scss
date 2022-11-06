@@ -1,0 +1,37 @@
+@use 'base' as *;
+@use 'styles' as *;
+
+@media all and (max-width: 1024px) {
+
+    .collection-section {
+        margin-bottom: 90px;
+
+        &__grid-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+            min-height: 510px;
+        }
+    }
+
+    .tranding-section {
+        &__switch {
+            margin-bottom: 90px;
+        }
+    }
+
+    .offer-section {
+        &__item-first {
+            padding: 20px 0 0 15px;
+        }
+
+        &__item-second {
+            padding: 20px 0 0 15px;
+        }
+
+        &__text {
+            line-height: 120%;
+            max-width: 150px;
+            min-height: 58px;
+        }
+    }
+}

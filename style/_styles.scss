@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Mulish;
+    src: url(../assets/fonts/Mulish/Mulish-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url(../assets/fonts/Mulish/Mulish-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Mulish;
+    src: url(../assets/fonts/Mulish/Mulish-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik/Rubik-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik/Rubik-Medium.ttf);
+    font-weight: 500;
+}
+
+.bold {
+    font-family: 'Rubik';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;  
+}
+
+$title: #555555;
+$subtitle: rgba(117, 117, 117, 0.71);
+$text: #757575;
+$h5: #C2C2C2;
+$text-light: #CCCCCC;
+$main-green: #7AC751;
+$basic-white: #ffffff;
+$corner-background: #00B7F1;

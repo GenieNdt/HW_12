@@ -1,0 +1,103 @@
+@use 'base' as *;
+@use 'styles' as *;
+
+@media all and (max-width: 767px) {
+
+    .collection-section {
+        margin-bottom: 70px;
+
+        &__grid-container {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas:
+                "big-item"
+                "small-item-first"
+                "small-item-second";
+            max-width: 480px;
+        }
+
+        &__big-item {
+            padding: 35px 0 0 20px;
+        }
+
+        &__small-item-first {
+            padding: 35px 0 0 20px;
+        }
+
+        &__small-item-second {
+            padding: 35px 0 0 20px;
+        }
+    }
+
+    .tranding-section {
+        &__h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+    
+        &__options {
+            flex-direction: column;
+            text-align: center;
+            gap: 18px;
+            margin-bottom: 50px;
+    
+            &__h5 {
+                font-size: 20px;
+            }
+        }
+
+        &__switch {
+            margin-bottom: 50px;
+        }
+    }
+
+    .card {
+        &__img {
+            margin-bottom: 10px;
+        }
+    }
+
+    .offer-section {
+
+        &__h3 {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    
+        &__grid-container {
+            grid-template-columns: 480px;
+            justify-content: center;
+            margin: 0 auto;
+        }
+    
+        &__item-first {
+            padding: 15px 0 0 15px;
+            max-width: 480px;
+        }
+    
+        &__item-second {
+            padding: 15px 0 0 15px;
+            max-width: 480px;
+        }
+    
+        &__h4 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    
+        &__text {
+            margin-bottom: 15px;
+            min-height: 58px;
+        }
+    
+        &__prices {
+            margin-bottom: 15px;
+        }
+    
+        &__circles {
+            display: flex;
+            gap: 18px;
+            margin-bottom: 10px;
+        }
+    }
+}

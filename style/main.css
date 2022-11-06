@@ -1,0 +1,405 @@
+@font-face {
+  font-family: Mulish;
+  src: url(../assets/fonts/Mulish/Mulish-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Mulish;
+  src: url(../assets/fonts/Mulish/Mulish-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: Mulish;
+  src: url(../assets/fonts/Mulish/Mulish-Bold.ttf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../assets/fonts/Rubik/Rubik-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Rubik;
+  src: url(../assets/fonts/Rubik/Rubik-Medium.ttf);
+  font-weight: 500;
+}
+.bold {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Mulish";
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 10px 10px;
+}
+
+.collection-section {
+  margin-bottom: 120px;
+}
+.collection-section__grid-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "big-item small-item-first" "big-item small-item-second";
+  gap: 17px;
+  min-height: 510px;
+}
+.collection-section__big-item {
+  grid-area: big-item;
+  background-image: url(../assets/images/background_1.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 50px 0 0 30px;
+}
+.collection-section__h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #555555;
+  margin-bottom: 14px;
+}
+.collection-section__h4__weight {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.collection-section__text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #7AC751;
+  margin-bottom: 18px;
+}
+.collection-section__text__bold {
+  font-weight: 800;
+}
+.collection-section__link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #757575;
+}
+.collection-section__small-item-first {
+  grid-area: small-item-first;
+  background-image: url(../assets/images/background_2.jpg);
+  padding: 50px 0 0 25px;
+  background-repeat: no-repeat;
+}
+.collection-section__small-item-second {
+  grid-area: small-item-second;
+  background-image: url(../assets/images/background_3.jpg);
+  padding: 50px 0 0 25px;
+  background-repeat: no-repeat;
+}
+
+.tranding-section__h3 {
+  font-weight: 700;
+  font-size: 36px;
+  color: #555555;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+.tranding-section__options {
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+.tranding-section__options__h5 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #C2C2C2;
+}
+.tranding-section__options__h5--active {
+  color: #7AC751;
+}
+.tranding-section__grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
+  row-gap: 45px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin-bottom: 64px;
+}
+.tranding-section__switch {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 105px;
+}
+
+.card__img {
+  position: relative;
+  max-width: 270px;
+  margin-bottom: 17px;
+}
+.card__img:hover .card__shop-options {
+  opacity: 1;
+}
+.card__corner-info {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 110%;
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 0 0 5px 0;
+}
+.card__corner-info--blue {
+  left: 1px;
+  background-color: #00B7F1;
+}
+.card__corner-info--green {
+  left: 1px;
+  background-color: #7AC751;
+}
+.card__corner-info--right {
+  right: 0;
+  border-radius: 0 0 0 5px;
+  background-color: #00B7F1;
+}
+.card__shop-options {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  position: absolute;
+  bottom: 15px;
+  right: 7px;
+  opacity: 0;
+}
+.card__shop-options__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.card__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(117, 117, 117, 0.71);
+  margin-bottom: 13px;
+}
+.card__title {
+  font-family: "Rubik";
+  font-size: 20px;
+  color: #555555;
+  margin-bottom: 12px;
+}
+.card__prices {
+  display: flex;
+  justify-content: space-between;
+  max-width: 270px;
+}
+.card__prices__price {
+  display: flex;
+  gap: 7px;
+}
+.card__prices__price__sale {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #7AC751;
+}
+.card__prices__price__full {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #CCCCCC;
+}
+.card__prices__rank {
+  display: flex;
+}
+
+.offer-section__h3 {
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #555555;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.offer-section__grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  min-height: 250px;
+  margin-bottom: 50px;
+}
+.offer-section__item-first {
+  position: relative;
+  background-image: url(../assets/images/background_4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 28px 0 0 25px;
+}
+.offer-section__item-second {
+  position: relative;
+  background-image: url(../assets/images/background_5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 28px 0 0 25px;
+}
+.offer-section__h4 {
+  font-weight: 600;
+  font-size: 22px;
+  color: #555555;
+  margin-bottom: 15px;
+}
+.offer-section__text {
+  font-size: 12px;
+  line-height: 150%;
+  color: #757575;
+  max-width: 250px;
+  margin-bottom: 25px;
+}
+.offer-section__prices {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.offer-section__prices__price {
+  display: flex;
+  gap: 10px;
+}
+.offer-section__prices__button {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #7AC751;
+  border-radius: 2px;
+  padding: 7px 10px;
+}
+.offer-section__circles {
+  display: flex;
+  gap: 18px;
+}
+.offer-section__circles__item {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 120%;
+  color: #ffffff;
+  background-color: #7AC751;
+  max-width: 19px;
+  padding: 7px 10px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media all and (max-width: 1024px) {
+  .collection-section {
+    margin-bottom: 90px;
+  }
+  .collection-section__grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    min-height: 510px;
+  }
+  .tranding-section__switch {
+    margin-bottom: 90px;
+  }
+  .offer-section__item-first {
+    padding: 20px 0 0 15px;
+  }
+  .offer-section__item-second {
+    padding: 20px 0 0 15px;
+  }
+  .offer-section__text {
+    line-height: 120%;
+    max-width: 150px;
+    min-height: 58px;
+  }
+}
+@media all and (max-width: 767px) {
+  .collection-section {
+    margin-bottom: 70px;
+  }
+  .collection-section__grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "big-item" "small-item-first" "small-item-second";
+    max-width: 480px;
+  }
+  .collection-section__big-item {
+    padding: 35px 0 0 20px;
+  }
+  .collection-section__small-item-first {
+    padding: 35px 0 0 20px;
+  }
+  .collection-section__small-item-second {
+    padding: 35px 0 0 20px;
+  }
+  .tranding-section__h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .tranding-section__options {
+    flex-direction: column;
+    text-align: center;
+    gap: 18px;
+    margin-bottom: 50px;
+  }
+  .tranding-section__options__h5 {
+    font-size: 20px;
+  }
+  .tranding-section__switch {
+    margin-bottom: 50px;
+  }
+  .card__img {
+    margin-bottom: 10px;
+  }
+  .offer-section__h3 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .offer-section__grid-container {
+    grid-template-columns: 480px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .offer-section__item-first {
+    padding: 15px 0 0 15px;
+    max-width: 480px;
+  }
+  .offer-section__item-second {
+    padding: 15px 0 0 15px;
+    max-width: 480px;
+  }
+  .offer-section__h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .offer-section__text {
+    margin-bottom: 15px;
+    min-height: 58px;
+  }
+  .offer-section__prices {
+    margin-bottom: 15px;
+  }
+  .offer-section__circles {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

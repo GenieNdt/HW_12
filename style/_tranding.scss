@@ -1,0 +1,152 @@
+@use 'base' as *;
+@use 'styles' as *;
+
+.tranding-section {
+    &__h3 {
+        font-weight: 700;
+        font-size: 36px;
+        color: $title;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 45px;
+    }
+
+    &__options {
+        display: flex;
+        gap: 70px;
+        justify-content: center;
+        margin-bottom: 70px;
+
+        &__h5 {
+            font-weight: 600;
+            font-size: 24px;
+            color: $h5;
+
+            &--active {
+                color: $main-green;
+            }
+        }
+    }
+
+    &__grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        justify-items: center;
+        row-gap: 45px;
+        column-gap: 30px;
+        margin-bottom: 64px;
+    }
+
+    &__switch {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-bottom: 105px;
+    }
+}
+
+.card {
+    &__img {
+        position: relative;
+        max-width: 270px;
+        margin-bottom: 17px;
+
+        &:hover {
+            .card__shop-options {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__corner-info {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 110%;
+        position: absolute;
+        top: 0;
+        color: $basic-white;
+        padding: 4px 10px;
+        border-radius: 0 0 5px 0;
+
+        &--blue {
+            left: 1px;
+            background-color: $corner-background;
+        }
+
+        &--green {
+            left: 1px;
+            background-color: $main-green;
+        }
+
+        &--right {
+            right: 0;
+            border-radius: 0 0 0 5px;
+            background-color: $corner-background;
+        }
+    }
+
+    &__shop-options {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+        position: absolute;
+        bottom: 15px;
+        right: 7px;
+        opacity: 0;
+
+        &__circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 39px;
+            height: 39px;
+            background-color: $basic-white;
+            border-radius: 50%;
+        }
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $subtitle;
+        margin-bottom: 13px;
+    }
+
+    &__title {
+        font-family: 'Rubik';
+        font-size: 20px;
+        color: $title;
+        margin-bottom: 12px;
+    }
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        max-width: 270px;
+
+        &__price {
+            display: flex;
+            gap: 7px;
+
+            &__sale {
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                color: $main-green;
+
+            }
+
+            &__full {
+                font-weight: 600;
+                font-size: 18px;
+                text-align: center;
+                text-decoration-line: line-through;
+                color: $text-light;
+            }
+        }
+
+        &__rank {
+            display: flex;
+        }
+    }
+}
