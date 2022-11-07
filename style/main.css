@@ -374,7 +374,8 @@ img {
     margin-bottom: 40px;
   }
   .offer-section__grid-container {
-    grid-template-columns: 480px;
+    grid-template-columns: 1fr;
+    max-width: 480px;
     justify-content: center;
     margin: 0 auto;
   }
